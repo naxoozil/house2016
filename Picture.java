@@ -17,6 +17,7 @@ public class Picture
     private Circle sun;
     private Circle sun2;
     private Square campo;
+    private Person persona;
     /**
      * Constructor for objects of class Picture
      */
@@ -74,7 +75,12 @@ public class Picture
 	{
 		if (sun != null)
 		{
-			sun.slowMoveVertical(100);
+			sun.slowMoveVertical(130);
+			wall.changeColor("black");
+            window.changeColor("white");
+            roof.changeColor("black");
+            sun.changeColor("black");
+            campo.changeColor("black");
 		}
 	}
 
@@ -90,6 +96,7 @@ public class Picture
             window.changeColor("white");
             roof.changeColor("black");
             sun.changeColor("black");
+            campo.changeColor("black");
         }
     }
 
