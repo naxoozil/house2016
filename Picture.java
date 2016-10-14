@@ -113,4 +113,20 @@ public class Picture
             sun.changeColor("yellow");
         }
     }
+    
+    /**
+     * A person is created and moves near the house
+     */
+    public void createPersonAndMove()
+    {
+        if (wall != null)
+        {
+            persona = new Person();
+            persona.moveHorizontal(-240);
+            persona.moveVertical(28);
+            persona.changeSize(60,30);
+            persona.makeVisible();
+            persona.slowMoveHorizontal(110);
+        }
+    }
 }
